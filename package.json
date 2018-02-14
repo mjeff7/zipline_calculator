@@ -11,5 +11,8 @@
     "buildGHPages": "git checkout gh-pages; git merge master -m 'Automerge'; yarn build; git add -f dist; git commit -m 'Update build'",
     "deploy": "git subtree push --prefix dist/ origin gh-pages",
     "redeploy": "yarn buildGHPages && yarn deploy"
+  },
+  "devDependencies": {
+    "sass": "^1.0.0-beta.5.2"
   }
 }
