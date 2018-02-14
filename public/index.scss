@@ -1,0 +1,76 @@
+$buttonSize: 90px;
+$calculatorColor: #3d7bd9;
+$backgroundColor: #d99a3d;
+
+body {
+  background-color: $backgroundColor;
+}
+
+#calculatorShell {
+  display: flex;
+  justify-content: center;
+}
+
+#calculator {
+  padding: 20px;
+  background-color: $calculatorColor;
+  box-shadow: 10px 10px 20px black, inset 0px 0px 10px white;
+  border-radius: 2em;
+  
+  #keypad {
+    display: flex;
+    .plus { height: $buttonSize * 2; }
+  }
+  
+  #display {
+    font-size: $buttonSize / 2;
+    text-align: right;
+    padding: 10px;
+    margin: 20px;
+    overflow: hidden;
+    
+    border: none;
+    border-radius: 0.3em;
+    background-color: grey;
+    box-shadow: inset 3px 3px 3px black;
+  }
+}
+
+.button {
+  display: block;
+  width: $buttonSize;
+  height: $buttonSize;
+  text-align: center;
+  font-size: 200%;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  border: none;
+  border-radius: 50%;
+  margin: 2px;
+  box-shadow: 0px 0px 8px black;
+  //background: url("http://freebet.pt/images/button-153682_640.png");
+  background: url("http://www.clker.com/cliparts/l/P/u/k/t/R/glossy-red-button-hi.png");
+  filter: saturate(0%);
+  background-size: 100% 100%;
+  background-repeat: none;
+  
+  transition: .1s;
+  
+  &:focus {
+    outline: none;
+  }
+  
+  &:active {
+    //background: url("https://pixabay.com/static/uploads/photo/2013/07/12/18/40/button-153685_640.png");
+    filter: hue-rotate(180deg);
+    background-size: 100% 100%;
+    background-repeat: none;
+  }
+}
+
+.red {
+  //background: url("http://www.clker.com/cliparts/l/P/u/k/t/R/glossy-red-button-hi.png");
+  filter: hue-rotate(0deg);
+  background-size: 100% 100%;
+  background-repeat: none;
+}
