@@ -1,0 +1,65 @@
+body {
+  background-color: #d99a3d;
+}
+
+#calculatorShell {
+  display: flex;
+  justify-content: center;
+}
+
+#calculator {
+  padding: 20px;
+  background-color: #3d7bd9;
+  box-shadow: 10px 10px 20px black, inset 0px 0px 10px white;
+  border-radius: 2em;
+}
+#calculator #keypad {
+  display: flex;
+}
+#calculator #keypad .plus {
+  height: 180px;
+}
+#calculator #display {
+  font-size: 45px;
+  text-align: right;
+  padding: 10px;
+  margin: 20px;
+  overflow: hidden;
+  border: none;
+  border-radius: 0.3em;
+  background-color: grey;
+  box-shadow: inset 3px 3px 3px black;
+}
+
+.button {
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  font-size: 200%;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  border: none;
+  border-radius: 50%;
+  margin: 2px;
+  box-shadow: 0px 0px 8px black;
+  background: url("http://www.clker.com/cliparts/l/P/u/k/t/R/glossy-red-button-hi.png");
+  filter: saturate(0%);
+  background-size: 100% 100%;
+  background-repeat: none;
+  transition: 0.1s;
+}
+.button:focus {
+  outline: none;
+}
+.button:active {
+  filter: hue-rotate(180deg);
+  background-size: 100% 100%;
+  background-repeat: none;
+}
+
+.red {
+  filter: hue-rotate(0deg);
+  background-size: 100% 100%;
+  background-repeat: none;
+}
