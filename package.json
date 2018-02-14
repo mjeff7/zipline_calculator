@@ -1,5 +1,5 @@
 {
-  "name": "codepen_project",
+  "name": "zipline_4_calculator",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "deploy": "git subtree push --prefix dist/ origin gh-pages",
     "redeploy": "yarn buildGHPages && yarn deploy"
   },
+  "description": "Use a simple desktop calculator in your browser.",
   "devDependencies": {
     "sass": "^1.0.0-beta.5.2"
   }
