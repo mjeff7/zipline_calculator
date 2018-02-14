@@ -1,10 +1,6 @@
-# <Project Title>
+# Calculator
 
-<Insert short description of the project>.
-Try it live [here]().
+Use a simple desktop calculator in your browser.
+Try it live [here](https://mjeff7.github.io/zipline_calculator/).
 
-This project is part of the FreeCodeCamp curriculum and completes the [*<Replace with project name and link>* project]().
-
-## Project layout
-
-<Optionally include details about the layout and other good to know things.>
+This project is part of the FreeCodeCamp curriculum and completes the [*Build a JavaScript Calculator* project](https://www.freecodecamp.org/challenges/build-a-javascript-calculator).
